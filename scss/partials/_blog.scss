@@ -6,12 +6,26 @@
         margin: 0 auto;
     }
     &__items-container {
-    
+        @media screen and (min-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
     &__item {
         border-radius: 5px;
         margin-bottom: 2em;
         cursor: pointer;
+
+        @media screen and (min-width: 480px) {
+            width: 49%;
+        }
+        @media screen and (min-width: 640px) {
+            width: 48%;
+        }
+        @media screen and (min-width: 768px) {
+            width: 32%;
+        }
     }
     &__item-img-container {
         margin: 0;

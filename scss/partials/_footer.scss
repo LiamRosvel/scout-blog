@@ -1,0 +1,77 @@
+.footer {
+    padding: 2em 0;
+    border-top: 1px solid $color1;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    //Blocks with links
+    &__info-container {
+
+    }
+    &__block-info {
+        margin-bottom: 2.5em;
+    }
+    &__block-title {
+        text-transform: uppercase;
+        color: $color3;
+        font-weight: $normal;
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+    &__block-list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    &__block-item {
+        line-height: 2;
+    }
+    &__block-link {
+        text-decoration: none;
+        color: $color2;
+        font-size: 1.1em;
+        transition: all 200ms ease-in;
+        &:hover {
+            color: $color3;
+        }
+    }
+    //copyright styles
+    &__copyright {
+        text-align: center;
+        color: $color2;
+    }
+    &__logo-icon {
+        width: 10em;
+        fill: $color2;
+    }
+    &__copyrith-title {
+        font-size: 1em;
+        font-weight: $normal;
+        margin: 1.5em 0 2em;
+    }
+    //svg list icons
+    &__social {
+        margin: 1.3em 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    &__social-item {
+        display: inline-block;
+    }
+    &__icon-tw,
+    &__icon-fb,
+    &__icon-in {
+        width: 2em;
+        height: 2em;
+        fill: $color2;
+    }
+    &__icon-fb {
+        margin: 0 2em;
+    }
+    //copy
+    &__copyright-date {
+        font-weight: $light;
+    }
+}

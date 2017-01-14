@@ -1,0 +1,30 @@
+.category {
+    padding: 2em 0;
+    background-color: $color1;
+    text-align: center;
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    &__item {
+        line-height: 3;
+    }
+    &__link {
+        text-decoration: none;
+        display: block;
+        border-radius: 2em;
+        color: $color2;
+        font-size: 1.1em;
+        transition: all 200ms ease-in;
+        &:hover {
+            background-color: #fff;
+            color: $color3;
+        }
+    }
+}

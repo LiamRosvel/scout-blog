@@ -1,0 +1,27 @@
+.landing {
+    padding: 3em 0;
+    background-color: $color6;
+    text-align: center;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__elements-container {
+        
+    }
+    &__category {
+        color: rgba(#fff, .6);
+        text-transform: uppercase;
+    }
+    &__title {
+        color: #fff;
+        margin-bottom: 0;
+        font-weight: $medium;
+        line-height: 1.4;
+    }
+    &__img-container {
+        margin: 0;
+        padding: 0;
+    }
+}

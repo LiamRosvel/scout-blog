@@ -1,0 +1,37 @@
+.header {
+    
+
+    &__container {
+        
+    }
+    &__elements-container {
+        
+
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; 
+        border-bottom: 1px solid rgba(#ccc, .5);
+    }
+    //logo styles
+    &__logo-header {
+        width: 11em;
+        margin: 1.5em;
+    }
+    &__logo-icon {
+        fill: $color4;
+    }
+    &__logo-letters,
+    &__menu-icon-path {
+        fill: $color5;
+    }
+    //icon menu styles
+    &__menu-icon {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 1.5em 1em;
+        cursor: pointer;
+    }
+}

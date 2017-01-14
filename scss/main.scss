@@ -2,6 +2,36 @@
 	box-sizing: border-box;
 }
 
+//Color variables
+$color1: #EAEBED;
+$color2: #8D98A1;
+$color3: #4f5d6b;
+$color4: #3197D6;
+$color5: #2A3B47;
+$color6: #59E5FF;
+
+//Font-family
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+//Font-weight
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+//General Styles
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
 img {
     max-width: 100%;
 }
+
+//partials
+@import "partials/header";
+@import "partials/main-nav";
+@import "partials/landing";
+@import "partials/category";
+@import "partials/blog";
+@import "partials/footer";

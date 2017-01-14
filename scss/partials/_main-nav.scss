@@ -1,0 +1,75 @@
+.main-nav {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #fff;
+    display: none;
+
+    &__list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    &__item {
+        line-height: 3;
+    }
+    &__link {
+        text-decoration: none;
+        color: $color2;
+        font-size: 1.15em;
+        transition: all 200ms ease-in;
+        &:hover {
+            color: $color3;
+        }
+    }
+    //submenu styles
+    &__sublist {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    &__sublist-item {
+
+    }
+    &__sublist-form {
+        display: none;
+    }
+    //styles input
+    &__sublist-input-container {
+        position: relative;
+        display: inline-block;
+        margin: 1em 0 1.5em;
+    }
+    &__sublist-input {
+        line-height: 2.5;
+        padding-left: 1em;
+        background-color: #F1F3F4;
+        border: 1px solid $color1;
+        border-radius: 1.5em;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__sublist-search-icon {
+        width: 1.5em;
+        height: 1.5em;
+        fill: $color2;
+
+        position: absolute;
+        top: .5em;
+        right: 1em;
+    }
+    //Button subscribe
+    &__sublist__button {
+        text-decoration: none;
+        display: block;
+        background-color: $color4;
+        border-radius: 5px;
+        line-height: 2.4;
+        color: #fff;
+        font-size: 1.2em;
+        transition: all 200ms ease-in;
+        &:hover {
+            background-color: #237AB3;
+        }
+    }
+}

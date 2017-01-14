@@ -1,16 +1,22 @@
 .main-nav {
-    
+
     @media screen and (max-width: 767px) {
         text-align: center;
-        padding: 1.5em;
         background-color: #fff;
-        display: none;    
+        padding: 0 1em; 
+        max-height: 0;
+        overflow: hidden;
+        transition: all 350ms ease-in;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &.active {
+        max-height: 22em;
     }
 
     &__list {
@@ -46,7 +52,7 @@
     //submenu styles
     &__sublist {
         margin: 0;
-        padding-left: 0;
+        padding: 0 0 1.5em;
         list-style: none;
     }
     &__sublist-item {

@@ -1,8 +1,17 @@
 .main-nav {
-    text-align: center;
-    padding: 1.5em;
-    background-color: #fff;
-    display: none;
+    
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        padding: 1.5em;
+        background-color: #fff;
+        display: none;    
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__list {
         margin: 0;
@@ -11,6 +20,15 @@
     }
     &__item {
         line-height: 3;
+
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+            padding-right: 1.5em;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-right: 3em;
+        }
     }
     &__link {
         text-decoration: none;
@@ -19,6 +37,10 @@
         transition: all 200ms ease-in;
         &:hover {
             color: $color3;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 1em;
         }
     }
     //submenu styles
@@ -29,6 +51,9 @@
     }
     &__sublist-item {
 
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+        }
     }
     &__sublist-form {
         display: none;
@@ -70,6 +95,12 @@
         transition: all 200ms ease-in;
         &:hover {
             background-color: #237AB3;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+            padding: 0 1em;
+            font-size: 1em;
         }
     }
 }

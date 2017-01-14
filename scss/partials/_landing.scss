@@ -3,12 +3,34 @@
     background-color: $color6;
     text-align: center;
 
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+
     &__container {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 1110px; 
+        }
     }
     &__elements-container {
+        cursor: pointer;
         
+        @media screen and (min-width: 768px) {
+            padding: 3em 0 1em;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding: 2em 0 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 80%; 
+        }    
     }
     &__category {
         color: rgba(#fff, .6);
@@ -19,9 +41,19 @@
         margin-bottom: 0;
         font-weight: $medium;
         line-height: 1.4;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2.5em;
+            line-height: 1.2;
+        }
     }
     &__img-container {
         margin: 0;
         padding: 0;
+
+        @media screen and (min-width: 1024px) {
+            width: 35em;
+            margin: 0 auto;
+        }
     }
 }
